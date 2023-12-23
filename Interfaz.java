@@ -1,4 +1,4 @@
-package Fernando.CopiladorGit;
+package Fernando.Abel;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -511,7 +511,7 @@ public class Interfaz extends javax.swing.JFrame implements ActionListener {
                 areaPila.setText("");
                 areaErrores.setText("");
                 areaSimbolos.setText("");
-                Definitivo obp = new Definitivo();
+                Definitivov2 obp = new Definitivov2();
                 
                 obp.textoPila = "";          
                 obp.textoTokens = "";
@@ -519,7 +519,11 @@ public class Interfaz extends javax.swing.JFrame implements ActionListener {
                 obp.textoCodigoInter = "";
                 obp.textoNotacion = "";
                 
-                obp.Accion(obp.Entrada(obp.Separar(areaCodigo.getText().replaceAll("\\n", ""))));
+                
+                
+                
+                
+                obp.Accion(obp.Entrada(obp.Separar(areaCodigo.getText().replaceAll("\t", ""))));
                 obp.mostrarSimbolos();
                 areaPila.setText(obp.textoPila);
                 areaTokens.setText(obp.textoTokens);
@@ -532,6 +536,9 @@ public class Interfaz extends javax.swing.JFrame implements ActionListener {
     /**
      * @param args the command line arguments
      */
+    
+     
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

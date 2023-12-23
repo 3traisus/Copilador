@@ -1,0 +1,7 @@
+!START! flotante a , e ; {  
+e = a ; a = e ; a = leer ; 
+si ( a == e ) then finasigna sino a = a * ( a - a / ( a + a ) ) ; finasigna finsi  
+para ( entero x = z ; x > e ; x ++ ) 
+si ( a == e ) then finasigna sino a = e ; finasigna finsi finasigna finpara 
+finasigna 
+} !END!
